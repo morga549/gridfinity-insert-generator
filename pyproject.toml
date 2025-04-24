@@ -1,0 +1,24 @@
+[project]
+name = "gridfinity-insert-generator"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Jack Morgan",email = "jack.art.morgan@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy (>=2.2.5,<3.0.0)",
+    "opencv-python (>=4.11.0.86,<5.0.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "gridfinity_insert_generator", from = "src"}]
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
